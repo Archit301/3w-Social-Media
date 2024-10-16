@@ -18,7 +18,7 @@ function App() {
     <Route path='/dashboard' element={<AdminDashboard/>}/>
     <Route path='/userform' element={<SubmissionForm/>}/>
     </Routes>
-    /</BrowserRouter></>
+    </BrowserRouter></>
   )
 }
 

@@ -19,9 +19,9 @@ const MONGO="mongodb+srv://archit:arcmak1@cluster0.t1gfi.mongodb.net/?retryWrite
 app.listen(PORT,()=>{
  console.log(`server is running on port ${PORT}`)
 })
-
+app.use('/backend/user',userRoutes)
 app.use(express.static(path.join(__dirname, '/frontend/dist')));
 app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, 'frontend', 'dist', 'index.html'));
   })
-app.use('/backend/user',userRoutes)
+
